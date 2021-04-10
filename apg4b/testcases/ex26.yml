@@ -1,0 +1,87 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      4
+      int x = 1 + 2 ;
+      print_int x + 3 ;
+      vec a = [ 1 , 2 , x ] ;
+      print_vec a + [ 4 , 5 , 6 ] ;
+    out: |
+      6
+      [ 5 7 9 ]
+  - name: sample2
+    in: |
+      2
+      print_int 1 - 2 ;
+      print_vec [ 1 , 2 , 3 ] - [ 3 , 2 , 1 ] ;
+    out: |
+      -1
+      [ -2 0 2 ]
+  - name: sample3
+    in: |
+      1
+      print_int 5 ;
+    out: |
+      5
+  - name: sample4
+    in: |
+      1
+      print_vec [ 1 , 2 ] ;
+    out: |
+      [ 1 2 ]
+  - name: sample5
+    in: |
+      2
+      int x = 1 ;
+      print_int x ;
+    out: |
+      1
+  - name: sample6
+    in: |
+      2
+      vec a = [ 3 , 4 ] ;
+      print_vec a ;
+    out: |
+      [ 3 4 ]
+  - name: sample7
+    in: |
+      4
+      int x = 1 ;
+      int y = 2 ;
+      int z = 3 ;
+      print_int x + y + z ;
+    out: |
+      6
+  - name: sample8
+    in: |
+      4
+      vec a = [ 1 , 2 , 3 ] ;
+      vec b = [ 4 , 5 , 6 ] ;
+      vec c = [ 7 , 8 , 9 ] ;
+      print_vec a + b + c ;
+    out: |
+      [ 12 15 18 ]
+  - name: sample9
+    in: |
+      6
+      vec a = [ 1 , 2 ] ;
+      vec b = a + [ 3 , 4 ] ;
+      vec c = a - [ 5 , 6 ] ;
+      print_vec a ;
+      print_vec b ;
+      print_vec c ;
+    out: |
+      [ 1 2 ]
+      [ 4 6 ]
+      [ -4 -4 ]
+
+extend:
+  - type: Text
+    path: "./ex26"
+    in: /in/*.txt
+    out: /out/*.txt

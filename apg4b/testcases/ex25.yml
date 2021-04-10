@@ -1,0 +1,66 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3
+      0 1 2
+      3
+      1 2 3
+      intersection
+    out: |
+      1 2
+  - name: sample2
+    in: |
+      3
+      0 1 2
+      3
+      1 2 3
+      union_set
+    out: |
+      0 1 2 3
+  - name: sample3
+    in: |
+      3
+      0 1 2
+      3
+      1 2 3
+      symmetric_diff
+    out: |
+      0 3
+  - name: sample4
+    in: |
+      3
+      0 1 2
+      3
+      1 2 3
+      subtract 2
+    out: |
+      0 1
+  - name: sample5
+    in: |
+      3
+      0 1 49
+      3
+      1 2 3
+      increment
+    out: |
+      0 1 2
+  - name: sample6
+    in: |
+      3
+      0 1 49
+      3
+      1 2 3
+      decrement
+    out: |
+      0 48 49
+
+extend:
+  - type: Text
+    path: "./ex25"
+    in: /in/*.txt
+    out: /out/*.txt

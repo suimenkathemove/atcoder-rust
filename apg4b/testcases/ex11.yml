@@ -1,0 +1,62 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3
+      2
+      + 1
+      * 3
+      / 2
+    out: |
+      1:3
+      2:9
+      3:4
+  - name: sample2
+    in: |
+      2
+      3
+      / 2
+      / 2
+    out: |
+      1:1
+      2:0
+  - name: sample3
+    in: |
+      4
+      3
+      + 1
+      / 0
+      * 2
+      - 10
+    out: |
+      1:4
+      error
+  - name: sample4
+    in: |
+      7
+      10
+      * 10
+      * 10
+      * 10
+      * 10
+      * 10
+      * 10
+      * 10
+    out: |
+      1:100
+      2:1000
+      3:10000
+      4:100000
+      5:1000000
+      6:10000000
+      7:100000000
+
+extend:
+  - type: Text
+    path: "./ex11"
+    in: /in/*.txt
+    out: /out/*.txt

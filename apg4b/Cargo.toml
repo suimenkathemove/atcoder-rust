@@ -1,0 +1,378 @@
+[package]
+name = "apg4b"
+version = "0.1.0"
+authors = ["yoshiharu2580 <yoshiharu2580@gmail.com>"]
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+apg4b-a = { alias = "a", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_a" }
+apg4b-aa = { alias = "aa", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_aa" }
+apg4b-ab = { alias = "ab", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ab" }
+apg4b-ac = { alias = "ac", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ac" }
+apg4b-ad = { alias = "ad", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ad" }
+apg4b-ae = { alias = "ae", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ae" }
+apg4b-af = { alias = "af", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_af" }
+apg4b-ag = { alias = "ag", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ag" }
+apg4b-ah = { alias = "ah", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ah" }
+apg4b-ai = { alias = "ai", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ai" }
+apg4b-aj = { alias = "aj", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_aj" }
+apg4b-ap1 = { alias = "ap1", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ak" }
+apg4b-ap2 = { alias = "ap2", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_al" }
+apg4b-ap3 = { alias = "ap3", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_am" }
+apg4b-ap4 = { alias = "ap4", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_an" }
+apg4b-b = { alias = "b", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_b" }
+apg4b-c = { alias = "c", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_c" }
+apg4b-d = { alias = "d", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_d" }
+apg4b-e = { alias = "e", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_e" }
+apg4b-ex1 = { alias = "ex1", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cv" }
+apg4b-ex10 = { alias = "ex10", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cm" }
+apg4b-ex11 = { alias = "ex11", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cl" }
+apg4b-ex12 = { alias = "ex12", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ck" }
+apg4b-ex13 = { alias = "ex13", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cj" }
+apg4b-ex14 = { alias = "ex14", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ci" }
+apg4b-ex15 = { alias = "ex15", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ch" }
+apg4b-ex16 = { alias = "ex16", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cg" }
+apg4b-ex17 = { alias = "ex17", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cf" }
+apg4b-ex18 = { alias = "ex18", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ce" }
+apg4b-ex19 = { alias = "ex19", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cd" }
+apg4b-ex2 = { alias = "ex2", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cu" }
+apg4b-ex20 = { alias = "ex20", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cc" }
+apg4b-ex21 = { alias = "ex21", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cb" }
+apg4b-ex22 = { alias = "ex22", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ca" }
+apg4b-ex23 = { alias = "ex23", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_bz" }
+apg4b-ex24 = { alias = "ex24", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_by" }
+apg4b-ex25 = { alias = "ex25", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_bx" }
+apg4b-ex26 = { alias = "ex26", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_bw" }
+apg4b-ex3 = { alias = "ex3", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_ct" }
+apg4b-ex4 = { alias = "ex4", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cs" }
+apg4b-ex5 = { alias = "ex5", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cr" }
+apg4b-ex6 = { alias = "ex6", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cq" }
+apg4b-ex7 = { alias = "ex7", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cp" }
+apg4b-ex8 = { alias = "ex8", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_co" }
+apg4b-ex9 = { alias = "ex9", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_cn" }
+apg4b-f = { alias = "f", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_f" }
+apg4b-g = { alias = "g", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_g" }
+apg4b-h = { alias = "h", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_h" }
+apg4b-i = { alias = "i", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_i" }
+apg4b-j = { alias = "j", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_j" }
+apg4b-k = { alias = "k", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_k" }
+apg4b-l = { alias = "l", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_l" }
+apg4b-m = { alias = "m", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_m" }
+apg4b-n = { alias = "n", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_n" }
+apg4b-o = { alias = "o", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_o" }
+apg4b-p = { alias = "p", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_p" }
+apg4b-q = { alias = "q", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_q" }
+apg4b-r = { alias = "r", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_r" }
+apg4b-s = { alias = "s", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_s" }
+apg4b-t = { alias = "t", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_t" }
+apg4b-u = { alias = "u", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_u" }
+apg4b-v = { alias = "v", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_v" }
+apg4b-w = { alias = "w", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_w" }
+apg4b-x = { alias = "x", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_x" }
+apg4b-y = { alias = "y", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_y" }
+apg4b-z = { alias = "z", problem = "https://atcoder.jp/contests/apg4b/tasks/APG4b_z" }
+
+[[bin]]
+name = "apg4b-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "apg4b-aa"
+path = "src/bin/aa.rs"
+
+[[bin]]
+name = "apg4b-ab"
+path = "src/bin/ab.rs"
+
+[[bin]]
+name = "apg4b-ac"
+path = "src/bin/ac.rs"
+
+[[bin]]
+name = "apg4b-ad"
+path = "src/bin/ad.rs"
+
+[[bin]]
+name = "apg4b-ae"
+path = "src/bin/ae.rs"
+
+[[bin]]
+name = "apg4b-af"
+path = "src/bin/af.rs"
+
+[[bin]]
+name = "apg4b-ag"
+path = "src/bin/ag.rs"
+
+[[bin]]
+name = "apg4b-ah"
+path = "src/bin/ah.rs"
+
+[[bin]]
+name = "apg4b-ai"
+path = "src/bin/ai.rs"
+
+[[bin]]
+name = "apg4b-aj"
+path = "src/bin/aj.rs"
+
+[[bin]]
+name = "apg4b-ap1"
+path = "src/bin/ap1.rs"
+
+[[bin]]
+name = "apg4b-ap2"
+path = "src/bin/ap2.rs"
+
+[[bin]]
+name = "apg4b-ap3"
+path = "src/bin/ap3.rs"
+
+[[bin]]
+name = "apg4b-ap4"
+path = "src/bin/ap4.rs"
+
+[[bin]]
+name = "apg4b-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "apg4b-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "apg4b-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "apg4b-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "apg4b-ex1"
+path = "src/bin/ex1.rs"
+
+[[bin]]
+name = "apg4b-ex10"
+path = "src/bin/ex10.rs"
+
+[[bin]]
+name = "apg4b-ex11"
+path = "src/bin/ex11.rs"
+
+[[bin]]
+name = "apg4b-ex12"
+path = "src/bin/ex12.rs"
+
+[[bin]]
+name = "apg4b-ex13"
+path = "src/bin/ex13.rs"
+
+[[bin]]
+name = "apg4b-ex14"
+path = "src/bin/ex14.rs"
+
+[[bin]]
+name = "apg4b-ex15"
+path = "src/bin/ex15.rs"
+
+[[bin]]
+name = "apg4b-ex16"
+path = "src/bin/ex16.rs"
+
+[[bin]]
+name = "apg4b-ex17"
+path = "src/bin/ex17.rs"
+
+[[bin]]
+name = "apg4b-ex18"
+path = "src/bin/ex18.rs"
+
+[[bin]]
+name = "apg4b-ex19"
+path = "src/bin/ex19.rs"
+
+[[bin]]
+name = "apg4b-ex2"
+path = "src/bin/ex2.rs"
+
+[[bin]]
+name = "apg4b-ex20"
+path = "src/bin/ex20.rs"
+
+[[bin]]
+name = "apg4b-ex21"
+path = "src/bin/ex21.rs"
+
+[[bin]]
+name = "apg4b-ex22"
+path = "src/bin/ex22.rs"
+
+[[bin]]
+name = "apg4b-ex23"
+path = "src/bin/ex23.rs"
+
+[[bin]]
+name = "apg4b-ex24"
+path = "src/bin/ex24.rs"
+
+[[bin]]
+name = "apg4b-ex25"
+path = "src/bin/ex25.rs"
+
+[[bin]]
+name = "apg4b-ex26"
+path = "src/bin/ex26.rs"
+
+[[bin]]
+name = "apg4b-ex3"
+path = "src/bin/ex3.rs"
+
+[[bin]]
+name = "apg4b-ex4"
+path = "src/bin/ex4.rs"
+
+[[bin]]
+name = "apg4b-ex5"
+path = "src/bin/ex5.rs"
+
+[[bin]]
+name = "apg4b-ex6"
+path = "src/bin/ex6.rs"
+
+[[bin]]
+name = "apg4b-ex7"
+path = "src/bin/ex7.rs"
+
+[[bin]]
+name = "apg4b-ex8"
+path = "src/bin/ex8.rs"
+
+[[bin]]
+name = "apg4b-ex9"
+path = "src/bin/ex9.rs"
+
+[[bin]]
+name = "apg4b-f"
+path = "src/bin/f.rs"
+
+[[bin]]
+name = "apg4b-g"
+path = "src/bin/g.rs"
+
+[[bin]]
+name = "apg4b-h"
+path = "src/bin/h.rs"
+
+[[bin]]
+name = "apg4b-i"
+path = "src/bin/i.rs"
+
+[[bin]]
+name = "apg4b-j"
+path = "src/bin/j.rs"
+
+[[bin]]
+name = "apg4b-k"
+path = "src/bin/k.rs"
+
+[[bin]]
+name = "apg4b-l"
+path = "src/bin/l.rs"
+
+[[bin]]
+name = "apg4b-m"
+path = "src/bin/m.rs"
+
+[[bin]]
+name = "apg4b-n"
+path = "src/bin/n.rs"
+
+[[bin]]
+name = "apg4b-o"
+path = "src/bin/o.rs"
+
+[[bin]]
+name = "apg4b-p"
+path = "src/bin/p.rs"
+
+[[bin]]
+name = "apg4b-q"
+path = "src/bin/q.rs"
+
+[[bin]]
+name = "apg4b-r"
+path = "src/bin/r.rs"
+
+[[bin]]
+name = "apg4b-s"
+path = "src/bin/s.rs"
+
+[[bin]]
+name = "apg4b-t"
+path = "src/bin/t.rs"
+
+[[bin]]
+name = "apg4b-u"
+path = "src/bin/u.rs"
+
+[[bin]]
+name = "apg4b-v"
+path = "src/bin/v.rs"
+
+[[bin]]
+name = "apg4b-w"
+path = "src/bin/w.rs"
+
+[[bin]]
+name = "apg4b-x"
+path = "src/bin/x.rs"
+
+[[bin]]
+name = "apg4b-y"
+path = "src/bin/y.rs"
+
+[[bin]]
+name = "apg4b-z"
+path = "src/bin/z.rs"
+[dependencies]
+num = "=0.2.1"
+num-bigint = "=0.2.6"
+num-complex = "=0.2.4"
+num-integer = "=0.1.42"
+num-iter = "=0.1.40"
+num-rational = "=0.2.4"
+num-traits = "=0.2.11"
+num-derive = "=0.3.0"
+ndarray = "=0.13.0"
+nalgebra = "=0.20.0"
+alga = "=0.9.3"
+libm = "=0.2.1"
+rand = { version = "=0.7.3", features = ["small_rng"] }
+getrandom = "=0.1.14"
+rand_chacha = "=0.2.2"
+rand_core = "=0.5.1"
+rand_hc = "=0.2.0"
+rand_pcg = "=0.2.1"
+rand_distr = "=0.2.2"
+petgraph = "=0.5.0"
+indexmap = "=1.3.2"
+regex = "=1.3.6"
+lazy_static = "=1.4.0"
+ordered-float = "=1.0.2"
+ascii = "=1.0.0"
+permutohedron = "=0.2.4"
+superslice = "=1.0.0"
+itertools = "=0.9.0"
+itertools-num = "=0.1.3"
+maplit = "=1.0.2"
+either = "=1.5.3"
+im-rc = "=14.3.0"
+fixedbitset = "=0.2.0"
+bitset-fixed = "=0.1.0"
+proconio = { version = "=0.3.6", features = ["derive"] }
+text_io = "=0.1.8"
+whiteread = "=0.5.0"
+rustc-hash = "=1.1.0"
+smallvec = "=1.2.0"
+[dev-dependencies]

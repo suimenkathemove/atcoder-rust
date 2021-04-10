@@ -1,0 +1,40 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      0 0 0
+      90
+    out: |
+      00:00:00
+      00:01:30
+  - name: sample2
+    in: |
+      0 0 0
+      -5
+    out: |
+      00:00:00
+      23:59:55
+  - name: sample3
+    in: |
+      23 59 30
+      30
+    out: |
+      23:59:30
+      00:00:00
+  - name: sample4
+    in: |
+      6 57 9
+      -4195
+    out: |
+      06:57:09
+      05:47:14
+
+extend:
+  - type: Text
+    path: "./ex24"
+    in: /in/*.txt
+    out: /out/*.txt

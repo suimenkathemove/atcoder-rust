@@ -1,0 +1,37 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      1
+      80
+      5
+    out: |
+      400
+  - name: sample2
+    in: |
+      2
+      umai
+      150
+      3
+    out: |
+      umai!
+      450
+  - name: sample3
+    in: |
+      2
+      good!
+      30
+      8
+    out: |
+      good!!
+      240
+
+extend:
+  - type: Text
+    path: "./ex8"
+    in: /in/*.txt
+    out: /out/*.txt
