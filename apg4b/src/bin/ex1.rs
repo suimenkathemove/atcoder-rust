@@ -1,3 +1,4 @@
 fn main() {
-    todo!();
+    println!("{}", "こんにちは");
+    println!("{}", "AtCoder");
 }
