@@ -2,3 +2,6 @@
 name = "atcoder-rust"
 version = "0.1.0"
 authors = ["emgniddikur"]
+
+[dependencies]
+proconio = "0.4.3"
