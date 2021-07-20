@@ -12,6 +12,6 @@ fn main() {
     let average = sum / (n as i32);
 
     for i in &a {
-        println!("{}", (average - i).abs())
+        println!("{}", (average - i).abs());
     }
 }

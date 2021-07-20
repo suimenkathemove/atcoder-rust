@@ -14,5 +14,5 @@ fn main() {
         sum
     }
 
-    println!("{}", sum(a) * sum(b) * sum(c))
+    println!("{}", sum(a) * sum(b) * sum(c));
 }
