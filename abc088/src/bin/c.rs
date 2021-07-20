@@ -1,6 +1,6 @@
 fn main() {
     proconio::input! {
-        c: [[i32; 3]; 3]
+        c: [[i32; 3]; 3],
     }
 
     let mut ok = true;
