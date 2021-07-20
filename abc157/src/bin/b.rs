@@ -31,11 +31,11 @@ fn main() {
         }
     }
 
-    if (0..3).into_iter().all(|n| checked[n][n]) {
+    if (0..3).all(|n| checked[n][n]) {
         is_bingo = true
     }
 
-    if (0..3).into_iter().all(|n| checked[n][2 - n]) {
+    if (0..3).all(|n| checked[n][2 - n]) {
         is_bingo = true;
     }
 
