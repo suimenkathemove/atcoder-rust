@@ -1,4 +1,22 @@
-fn main() {}
+fn main() {
+    proconio::input! {
+        n: usize,
+    }
+
+    let mut num = n % 9;
+    if num == 0 {
+        num = 9;
+    }
+
+    let digit = (n as f64 / 9.).ceil() as i32;
+
+    let ans = (0..digit)
+        .map(|_| num.to_string())
+        .collect::<Vec<_>>()
+        .join("");
+
+    println!("{}", ans);
+}
 
 fn brute_force() {
     proconio::input! {
