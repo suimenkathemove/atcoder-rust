@@ -33,3 +33,68 @@ fn main() {
 
     println!("{}", set.len());
 }
+
+fn brute_force() {
+    proconio::input! {
+        s: String,
+    }
+
+    fn is_match(t: &str, s: &str) -> bool {
+        if t.len() > s.len() {
+            return false;
+        }
+        for i in 0..=s.len() - t.len() {
+            let mut ok = true;
+
+            for j in 0..t.len() {
+                let t_char = &t.chars().collect::<Vec<_>>()[j];
+                let s_char = &s.chars().collect::<Vec<_>>()[i + j];
+                if t_char != s_char && t_char != &'.' {
+                    ok = false;
+                }
+            }
+
+            if ok {
+                return true;
+            }
+        }
+
+        false
+    }
+
+    let chars = [
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+        's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '.',
+    ];
+
+    let mut set: HashSet<String> = HashSet::new();
+
+    for c1 in &chars {
+        let t = c1.to_string();
+        if is_match(&t, &s) {
+            set.insert(t);
+        }
+    }
+
+    for c1 in &chars {
+        for c2 in &chars {
+            let t = format!("{}{}", c1, c2);
+            if is_match(&t, &s) {
+                set.insert(t);
+            }
+        }
+    }
+
+    for c1 in &chars {
+        for c2 in &chars {
+            for c3 in &chars {
+                let t = format!("{}{}{}", c1, c2, c3);
+                if is_match(&t, &s) {
+                    set.insert(t);
+                }
+            }
+        }
+    }
+
+    println!("{}", set.len());
+}
