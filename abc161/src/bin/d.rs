@@ -22,26 +22,18 @@ fn main() {
             return;
         }
 
-        let i_last: usize = i
-            .to_string()
-            .chars()
-            .collect::<Vec<_>>()
-            .last()
-            .unwrap()
-            .to_string()
-            .parse()
-            .unwrap();
+        let i_first_place = i % 10;
 
-        if i_last > 0 {
-            let new_i = format!("{}{}", i, i_last - 1).parse().unwrap();
+        if i_first_place > 0 {
+            let new_i = format!("{}{}", i, i_first_place - 1).parse().unwrap();
             q.push_back(new_i);
         }
 
-        let new_i = format!("{}{}", i, i_last).parse().unwrap();
+        let new_i = format!("{}{}", i, i_first_place).parse().unwrap();
         q.push_back(new_i);
 
-        if i_last < 9 {
-            let new_i = format!("{}{}", i, i_last + 1).parse().unwrap();
+        if i_first_place < 9 {
+            let new_i = format!("{}{}", i, i_first_place + 1).parse().unwrap();
             q.push_back(new_i);
         }
     }
